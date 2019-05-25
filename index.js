@@ -1,22 +1,10 @@
-/* Statefull component - Lifecicles control and better resolution for states*/
-// class Hello extends React.Component {
-//   render() {
-//     return (
-//       <div>
-//         <h1>Hello Component</h1>
-//         <h2>Coneúdo Statefull</h2>
-//       </div>
-//     );
-//   }
-// }
-
-/*Stateless - dumb components without states but really fast renders */
+/*Stateless - JS insted of JSX*/
 function Hello() {
-  return (
-    <div>
-      <h1>Hello Component</h1>
-      <h2>Coneúdo Stateless</h2>
-    </div>
+  return React.createElement(
+    "div",
+    null,
+    React.createElement("h1", null, "Hello Component"),
+    React.createElement("h2", null, "Conte\xFAdo JS direto sem babel")
   );
 }
 ReactDOM.render(<Hello />, document.getElementById("root"));
