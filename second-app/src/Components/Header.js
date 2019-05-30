@@ -1,5 +1,5 @@
 import React from "react";
-const Header = ({ logo }) => {
+const Header = ({ logo, alterRender, clicks, clickMe }) => {
   return (
     <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
@@ -14,6 +14,9 @@ const Header = ({ logo }) => {
       >
         Learn React
       </a>
+      <p>{clicks}</p>
+      <button onClick={alterRender}>Alterar Renderização</button>
+      <button onClick={clickMe}>Click me!</button>
     </header>
   );
 };
