@@ -7,3 +7,20 @@
   border-radius: 1em;
   box-shadow: 10px 10px 10px -5px rgba(177, 175, 175, 0.7);
 }
+.PokeCard-data {
+}
+.PokeCard-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  border-radius: 0.1em;
+  margin: 1rem;
+}
+.PokeCard img {
+  transition: all ease 500ms;
+}
+.PokeCard img:hover {
+  transform: scale(1.25);
+  opacity: 0.7;
+}

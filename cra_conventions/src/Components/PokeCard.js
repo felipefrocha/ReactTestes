@@ -14,7 +14,7 @@ const PokeCard = ({ card }) => {
   return (
     <div className="PokeCard">
       <h3>{card.name}</h3>
-      <img src={imgSrc} />
+      <img className="PokeCard-image" src={imgSrc} />
       <p>
         <strong>Tipo: </strong> {card.type}
         <br />

@@ -7,3 +7,9 @@
   flex-wrap: wrap;
   margin: 10%;
 }
+.PokeDex-winner {
+  color: lightgreen;
+}
+.PokeDex-loser {
+  color: lightcoral;
+}

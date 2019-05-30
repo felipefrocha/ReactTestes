@@ -11,11 +11,11 @@ export default class PokeDex extends Component {
   render() {
     return (
       <div>
-        <h1>
-          PokeDex
-          {this.props.winner ? <strong>Winner</strong> : ""}
-          Render
-        </h1>
+        {this.props.winner ? (
+          <h1 className="PokeDex-winner">PokeDex Wins</h1>
+        ) : (
+          <h1 className="PokeDex-loser">PokeDex Lose</h1>
+        )}
         <div className="PokeDex-cards">
           {this.props.pokemons.map(cardItem => (
             <PokeCard key={cardItem.id} card={cardItem} />
