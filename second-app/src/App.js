@@ -18,6 +18,7 @@ class App extends Component {
     this.setState({ renderThis: !this.state.renderThis });
   };
   clickMe() {
+    console.log(this.state.clicks);
     this.setState({ clicks: this.state.clicks + 1 });
   }
 
@@ -27,7 +28,8 @@ class App extends Component {
         <Header
           logo={logo}
           alterRender={() => this.alterRenderThis(this.state.renderThis)}
-          clickMe={this.clickMe} //Vai quebrar pois perdeu o contexto de this
+          clicks={this.state.clicks}
+          clickMe={() => this.clickMe()} //Vai quebrar pois perdeu o contexto de this
         />
         <main>
           <div>
