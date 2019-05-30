@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import Header from "./Components/Header";
 import Statefull from "./Components/Statefull";
 import Stateless from "./Components/Stateless";
 
@@ -12,25 +13,11 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <button onClick={alterRenderThis}>Atualize</button>
-      </header>
-      <body>
-        <div style={{ display: "inline-block" }}>
+      <Header logo={logo} />
+      <main>
+        <div>
           {renderThis ? (
-            <div>
+            <div style={{ display: "inline-block" }}>
               <Statefull arr={["Força", "Foco", "Fé"]} />
               <Stateless arr={["Determinação", "Objetivo", "Compromisso"]} />
             </div>
@@ -38,7 +25,7 @@ function App() {
             <Stateless arr={["Determinação", "Objetivo", "Compromisso"]} />
           )}
         </div>
-      </body>
+      </main>
     </div>
   );
 }
