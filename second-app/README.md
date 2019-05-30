@@ -66,3 +66,26 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### POKEMON Dex and Cards
+
+## APIS
+
+const POKE_API =
+"https://raw.githubuserco
+const POKE_FANCY_API =
+"https://assets.pokemon.c
+\_http://pngimg.com/upload
+
+## Dados
+
+[
+{ id: 4, name: "Charmande
+{ id: 7, name: "Squirtle"
+{ id: 11, name: "Metapod"
+{ id: 12, name: "Butterfr
+{ id: 25, name: "Pikachu"
+{ id: 39, name: "Jigglypu
+{ id: 94, name: "Gengar",
+{ id: 133, name: "Eevee",
+]
